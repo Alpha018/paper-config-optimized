@@ -67,5 +67,3 @@ If you really love the project and want to support its maintenance, you can also
 ## Stay in touch
 
 - Author - [Tomás Alegre](https://github.com/Alpha018)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/alpha018)
