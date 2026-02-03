@@ -132,16 +132,16 @@ java -Xms1G -Xmx1G \
 
 ---
 
-# 🖥️ Hardware Resources Guide
+## 🖥️ Hardware Resources Guide
 
 Understanding the balance between CPU and RAM is key to a lag-free experience.
 
-## 🧠 CPU vs. RAM
+### 🧠 CPU vs. RAM
 
 * **CPU is King:** Minecraft's main loop is primarily single-threaded. A CPU with high **single-core performance** (high clock speed/IPC) is far more important than a CPU with many cores.
 * **RAM is not a Magic Fix:** Adding too much RAM (e.g., 32GB for a survival server) can actually **hurt performance**. A larger heap means the Garbage Collector has more data to scan, leading to longer lag spikes when it runs.
 
-## 📊 Memory Recommendations
+### 📊 Memory Recommendations
 
 Allocations depend on your server software, plugin count, and player base.
 
@@ -157,7 +157,7 @@ Allocations depend on your server software, plugin count, and player base.
 * **Skyblock / Factions:** 8GB - 12GB (Due to high entity counts and complex plugins)
 * **BungeeCord / Velocity:** 512MB - 1GB (Proxies require very little RAM)
 
-## ⚠️ Important Considerations
+### ⚠️ Important Considerations
 
 1. **Don't Over-allocate:** Stick to 6-10GB for most standard servers. Only go higher if you have specific needs (huge modpacks or 100+ players).
 2. **Pre-generate your world:** Use a plugin like Chunky to pre-generate chunks. This reduces CPU usage significantly when players explore.

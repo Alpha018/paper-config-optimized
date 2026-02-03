@@ -54,6 +54,16 @@ We welcome contributions from the community! If you'd like to add new configurat
 
 Let's work together to create the best-optimized Minecraft server experience!
 
+## ❤️ Support the Project
+
+If these configurations helped your server run smoother, please consider giving this repository a **⭐ Star**!
+
+It helps other players and server owners find these optimizations and improve their gameplay experience. Every star counts!
+
+If you really love the project and want to support its maintenance, you can also buy me a coffee:
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/alpha018)
+
 ## Stay in touch
 
 - Author - [Tomás Alegre](https://github.com/Alpha018)
