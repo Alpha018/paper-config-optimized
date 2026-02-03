@@ -1,0 +1,28 @@
+allow-end-crystal-respawn: true
+dab:
+  activation-dist-mod: 7
+  blacklisted-entities: []
+  enabled: true
+  max-tick-freq: 20
+  start-distance: 10
+enable-async-mob-spawning: true
+enable-books: true
+enable-suffocation-optimization: true
+entity_timeouts:
+  LLAMA_SPIT: -1
+  SNOWBALL: -1
+flare:
+  url: https://flare.airplane.gg
+inactive-goal-selector-throttle: true
+info:
+  version: '1.0'
+misc:
+  disable-method-profiler: true
+  disable-out-of-order-chat: false
+projectile:
+  max-loads-per-projectile: 8
+  max-loads-per-tick: 10
+sentry-dsn: ''
+tps-catchup: true
+web-services:
+  token: ''
