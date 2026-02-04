@@ -1,4 +1,19 @@
-_version: 29
+_version: 31
+anticheat:
+  obfuscation:
+    items:
+      all-models:
+        also-obfuscate: []
+        dont-obfuscate:
+          - minecraft:lodestone_tracker
+        sanitize-count: true
+      enable-item-obfuscation: false
+      model-overrides:
+        minecraft:elytra:
+          also-obfuscate: []
+          dont-obfuscate:
+            - minecraft:damage
+          sanitize-count: true
 block-updates:
   disable-chorus-plant-updates: false
   disable-mushroom-block-updates: false
@@ -9,18 +24,17 @@ chunk-loading-advanced:
   player-max-concurrent-chunk-generates: 0
   player-max-concurrent-chunk-loads: 0
 chunk-loading-basic:
-  player-max-chunk-generate-rate: -1
-  player-max-chunk-load-rate: 100
-  player-max-chunk-send-rate: 75
+  player-max-chunk-generate-rate: -1.0
+  player-max-chunk-load-rate: 100.0
+  player-max-chunk-send-rate: 75.0
 chunk-system:
-  gen-parallelism: default
   io-threads: -1
   worker-threads: -1
 collisions:
   enable-player-collisions: false
   send-full-pos-for-hard-colliding-entities: true
 commands:
-  fix-target-selector-tag-completion: true
+  ride-command-allow-player-as-vehicle: false
   suggest-player-names-when-null-tab-completions: true
   time-command-affects-all-worlds: false
 console:
@@ -46,7 +60,9 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
     flying-player: <lang:multiplayer.disconnect.flying>
     flying-vehicle: <lang:multiplayer.disconnect.flying>
-  no-permission: <red>I'm sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.
+  no-permission:
+    <red>I'm sorry, but you do not have permission to perform this command.
+    Please contact the server administrators if you believe that this is in error.
   use-display-name-in-quit-message: false
 misc:
   chat-threads:
@@ -54,24 +70,28 @@ misc:
     chat-executor-max-size: -1
   client-interaction-leniency-distance: default
   compression-level: default
-  fix-entity-position-desync: true
+  enable-nether: true
+  fix-far-end-terrain-generation: true
   load-permissions-yml-before-plugins: true
   max-joins-per-tick: 3
+  prevent-negative-villager-demand: false
   region-file-cache-size: 256
+  send-full-pos-for-item-entities: false
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
   use-dimension-type-for-custom-spawners: false
+  xp-orb-groups-per-area: default
 packet-limiter:
   all-packets:
     action: KICK
-    interval: 7
-    max-packet-rate: 500
+    interval: 7.0
+    max-packet-rate: 500.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
-    ServerboundPlaceRecipePacket:
+    minecraft:place_recipe:
       action: DROP
-      interval: 4
-      max-packet-rate: 5
+      interval: 4.0
+      max-packet-rate: 5.0
 player-auto-save:
   max-per-tick: -1
   rate: -1
@@ -82,7 +102,7 @@ proxies:
   velocity:
     enabled: false
     online-mode: true
-    secret: ''
+    secret: ""
 scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false
@@ -101,8 +121,14 @@ unsupported-settings:
   allow-piston-duplication: false
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
+  oversized-item-component-sanitizer:
+    dont-sanitize: []
   perform-username-validation: true
+  skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
+  update-equipment-on-player-actions: true
+update-checker:
+  enabled: true
 watchdog:
   early-warning-delay: 10000
   early-warning-every: 5000

@@ -1,15 +1,3 @@
-# This is the main configuration file for Spigot.
-# As you can see, there's tons to configure. Some options may impact gameplay, so use
-# with caution, and make sure you know what each option does before configuring.
-# For a reference for any variable inside this file, check out the Spigot wiki at
-# http://www.spigotmc.org/wiki/spigot-configuration/
-#
-# If you need help with the configuration or have any questions related to Spigot,
-# join us at the Discord or drop by our forums and leave a post.
-#
-# Discord: https://www.spigotmc.org/go/discord
-# Forums: http://www.spigotmc.org/
-
 advancements:
   disable-saving: true
   disabled:
@@ -26,6 +14,7 @@ commands:
   spam-exclusions:
     - /skill
   tab-complete: 0
+  enable-spam-exclusions: false
 config-version: 12
 messages:
   outdated-client: §cYour client is outdated! Please update to version {0}.
