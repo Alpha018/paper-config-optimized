@@ -1,4 +1,4 @@
-config-version: 31
+config-version: 47
 settings:
   allow-water-placement-in-the-end: true
   blast-resistance-overrides: {}
@@ -517,7 +517,18 @@ world-settings:
         controllable: true
         respect-nbt: []
         ridable: false
-        ridable-in-water: false
+        ridable-in-water: true
+        attributes:
+          max_health: 20.0
+          scale: 1.0
+      armadillo:
+        ridable: false
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 12.0
+          scale: 1.0
+        breeding-delay-ticks: 6000
       axolotl:
         always-drop-exp: false
         attributes:

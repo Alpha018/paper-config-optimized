@@ -64,6 +64,12 @@ If you really love the project and want to support its maintenance, you can also
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/alpha018)
 
+### 📚 Featured Guide: Easy Docker Setup
+
+I've written a detailed post on **Buy Me a Coffee** explaining how to set up a Docker Compose environment with all these optimized configurations out of the box. It's a great starting point if you want to get a server running quickly and efficiently!
+
+👉 **[Read the Full Guide on Buy Me a Coffee](https://buymeacoffee.com/alpha018)**
+
 ## Stay in touch
 
 - Author - [Tomás Alegre](https://github.com/Alpha018)
